@@ -2,14 +2,15 @@
 
 import Image from 'next/image';
 import { useMemo, useState } from 'react';
-import { getWhatsAppInquiryHref, productCategories } from '@/data/site';
+import { getEmailInquiryHref, getWhatsAppInquiryHref, productCategories, produceItems } from '@/data/site';
 
-const filters = ['All', ...productCategories.map((product) => product.category)];
+const catalogItems = [...produceItems, ...productCategories];
+const filters = ['All', ...Array.from(new Set(catalogItems.map((product) => product.category)))];
 
 export function ProductExplorer() {
   const [activeFilter, setActiveFilter] = useState('All');
   const products = useMemo(
-    () => activeFilter === 'All' ? productCategories : productCategories.filter((product) => product.category === activeFilter),
+    () => activeFilter === 'All' ? catalogItems : catalogItems.filter((product) => product.category === activeFilter),
     [activeFilter],
   );
 
@@ -38,9 +39,22 @@ export function ProductExplorer() {
             <div className="product-page-copy">
               <h2>{product.title}</h2>
               <p>{product.description}</p>
-              <a className="enquiry-link" href={getWhatsAppInquiryHref(product.title)} target="_blank" rel="noreferrer">
-                Enquire on WhatsApp <span aria-hidden="true">↗</span>
-              </a>
+              <dl className="product-specs">
+                <div><dt>Origin</dt><dd>{product.specifications.origin}</dd></div>
+                <div><dt>Packaging</dt><dd>{product.specifications.packaging}</dd></div>
+                <div><dt>Terms</dt><dd>{product.specifications.tradeTerms}</dd></div>
+                {product.specifications.qualityStandards && <div><dt>Quality</dt><dd>{product.specifications.qualityStandards}</dd></div>}
+              </dl>
+              {product.title === 'Dates / Fresh & Dry Dates' && <p className="product-note"><strong>Varieties:</strong> Medjool, Deglet Noor, Sukkari, and buyer-specified grades.</p>}
+              {product.title === 'Bitumen' && <p className="product-note"><strong>Grades:</strong> Penetration 60/70, 80/100, and Viscosity Grade VG-30.</p>}
+              <div className="product-enquiry-actions">
+                <a className="enquiry-link" href={getWhatsAppInquiryHref(product.title)} target="_blank" rel="noreferrer">
+                  Request quote on WhatsApp <span aria-hidden="true">↗</span>
+                </a>
+                <a className="email-enquiry-link" href={getEmailInquiryHref(product.title)}>
+                  Email quote
+                </a>
+              </div>
             </div>
           </article>
         ))}

@@ -30,6 +30,6 @@
 
 - WhatsApp is connected to `8602722245`.
 - Call buttons are connected to `8602722245` and `9752823426`.
-- Email links are connected to `eliteharvestglobal@gmail.com`.
+- Email links are connected to `info@eliteharvestglobal.com`.
 - Office address and Google Maps link are placeholders until the final address is provided.
 - Logo currently uses a text placeholder and can be replaced after receiving the final logo.

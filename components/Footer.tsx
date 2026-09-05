@@ -8,10 +8,19 @@ export function Footer() {
       <div className="shell footer-grid">
         <div className="footer-intro">
           <Link className="footer-brand" href="/" aria-label={`${site.name} home`}>
-            <Image src="/assets/images/logo.jpeg" alt="Elite Harvest Global logo" width={58} height={58} />
+            <Image src="/assets/images/logo-removebg-preview.png" alt="Elite Harvest Global logo" width={58} height={58} />
             <span>Elite Harvest <b>Global</b></span>
           </Link>
           <p>Helping commercial buyers explore agriculture, food, and trade requirements with a direct, practical approach.</p>
+          <div className="footer-certifications" aria-label="Trade documentation logos">
+            <span>Documentation available on request</span>
+            <div className="footer-certification-logos">
+              <Image src="/assets/images/logo/apeda-logo.png" alt="APEDA" width={72} height={36} />
+              <Image src="/assets/images/logo/fssai-logo.png" alt="FSSAI" width={72} height={36} />
+              <Image src="/assets/images/logo/iso-logo.webp" alt="ISO" width={72} height={36} />
+              <Image className="spices-board-logo" src="/assets/images/logo/spices-board.png" alt="Spices Board" width={72} height={36} />
+            </div>
+          </div>
         </div>
 
         <div className="footer-column">

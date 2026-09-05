@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CtaBand } from '@/components/CtaBand';
 import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/seo';
-import { galleryItems, highlights, productCategories, serviceCoverage, site } from '@/data/site';
+import { galleryItems, highlights, produceItems, serviceCoverage, site } from '@/data/site';
 
 export const metadata: Metadata = {
   title: 'Agriculture & Global Trade',
@@ -25,7 +24,7 @@ const proofPoints = [
 
 export default function HomePage() {
   return (
-    <>
+    <div className="home-page">
       <OrganizationStructuredData />
       <WebsiteStructuredData />
 
@@ -96,9 +95,9 @@ export default function HomePage() {
             <Link className="text-link desktop-link" href="/products">View all categories <span aria-hidden="true">→</span></Link>
           </div>
           <div className="product-showcase-grid">
-            {productCategories.map((product) => (
+            {produceItems.map((product) => (
               <article key={product.title} className="product-showcase-card">
-                <Image src={product.image} alt={product.alt} width={720} height={540} sizes="(max-width: 680px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+                <Image src={product.image} alt={product.alt} width={720} height={540} sizes="(max-width: 680px) 100vw, (max-width: 1024px) 50vw, 20vw" />
                 <div>
                   <p>{product.category}</p>
                   <h3>{product.title}</h3>
@@ -158,7 +157,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CtaBand />
-    </>
+    </div>
   );
 }

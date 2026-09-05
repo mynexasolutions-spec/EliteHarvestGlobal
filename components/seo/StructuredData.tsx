@@ -16,7 +16,7 @@ export function OrganizationStructuredData() {
       '@type': 'Organization',
       name: site.name,
       url: site.domain,
-      logo: `${site.domain}/assets/images/logo.jpeg`,
+      logo: `${site.domain}/assets/images/logo-removebg-preview.png`,
       email: site.email,
       telephone: site.primaryPhone,
       address: { '@type': 'PostalAddress', addressCountry: 'IN' },

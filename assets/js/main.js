@@ -37,6 +37,6 @@ if (contactForm instanceof HTMLFormElement) {
       formStatus.textContent = "Opening your email app...";
     }
 
-    window.location.href = `mailto:eliteharvestglobal@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@eliteharvestglobal.com?subject=${subject}&body=${body}`;
   });
 }

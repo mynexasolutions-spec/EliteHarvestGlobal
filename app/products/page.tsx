@@ -17,7 +17,7 @@ export default function ProductsPage() {
         <div className="shell">
           <p className="eyebrow">Products & services</p>
           <h1 id="products-heading">Products for practical commercial requirements.</h1>
-          <p>Browse the categories below, then contact us with your specifications, packing requirement, quantity, and destination.</p>
+          <p>Explore our Agro & Food and Industrial & Commodity divisions, then request a quote with your specifications, quantity, packaging, and destination.</p>
         </div>
       </section>
       <section className="section-space products-page-section">

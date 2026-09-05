@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -57,7 +56,7 @@ export function Header() {
       <div className="shell navbar">
         <Link className="brand" href="/" aria-label={`${site.name} home`} onClick={handleLogoClick}>
           <span className="brand-logo">
-            <Image src="/assets/images/logo.jpeg" alt="Elite Harvest Global logo" width={88} height={88} priority />
+            <img src="/assets/images/logo-removebg-preview.png" alt="Elite Harvest Global logo" width="88" height="88" fetchPriority="high" />
           </span>
           <span className="brand-copy">
             <strong>Elite Harvest</strong>

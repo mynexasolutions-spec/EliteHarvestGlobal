@@ -10,8 +10,8 @@ export const size = {
 export const contentType = 'image/png';
 
 export default async function Icon() {
-  const logo = await readFile(join(process.cwd(), 'public', 'assets', 'images', 'logo.jpeg'));
-  const logoSource = `data:image/jpeg;base64,${logo.toString('base64')}`;
+  const logo = await readFile(join(process.cwd(), 'public', 'assets', 'images', 'logo-removebg-preview.png'));
+  const logoSource = `data:image/png;base64,${logo.toString('base64')}`;
 
   return new ImageResponse(
     (
