@@ -62,7 +62,7 @@ export default function HomePage() {
           </div>
           <div className="intro-copy">
             <p>We work around the detail that makes commercial supply practical: product requirements, quantity, packaging, documentation, destination, and timely communication.</p>
-            <Link className="text-link" href="/about">About Elite Harvest Global <span aria-hidden="true">→</span></Link>
+            <Link className="text-link" href="/about">About Elite Harvest Global</Link>
           </div>
         </div>
       </section>
@@ -92,7 +92,7 @@ export default function HomePage() {
               <p className="eyebrow">Product categories</p>
               <h2 id="products-heading">A practical range for commercial enquiries.</h2>
             </div>
-            <Link className="text-link desktop-link" href="/products">View all categories <span aria-hidden="true">→</span></Link>
+            <Link className="text-link desktop-link" href="/products">View all categories</Link>
           </div>
           <div className="product-showcase-grid">
             {produceItems.map((product) => (
@@ -101,12 +101,12 @@ export default function HomePage() {
                 <div>
                   <p>{product.category}</p>
                   <h3>{product.title}</h3>
-                  <Link href="/products" aria-label={`Explore ${product.title}`}>Explore <span aria-hidden="true">↗</span></Link>
+                  <Link href="/products" aria-label={`Explore ${product.title}`}>Explore</Link>
                 </div>
               </article>
             ))}
           </div>
-          <Link className="text-link mobile-link" href="/products">View all categories <span aria-hidden="true">→</span></Link>
+          <Link className="text-link mobile-link" href="/products">View all categories</Link>
         </div>
       </section>
 
@@ -147,7 +147,7 @@ export default function HomePage() {
               <p className="eyebrow">From field to trade</p>
               <h2 id="gallery-heading">A closer look at our world.</h2>
             </div>
-            <Link className="text-link desktop-link" href="/gallery">Open gallery <span aria-hidden="true">→</span></Link>
+            <Link className="text-link desktop-link" href="/gallery">Open gallery</Link>
           </div>
           <div className="gallery-preview-grid">
             {galleryItems.map((item) => (
