@@ -14,7 +14,7 @@
 - Buy hosting through Hostinger or another reliable provider using the same official company email.
 - Upload all website files to `public_html` or the configured static site root.
 - Enable SSL/HTTPS from the hosting panel.
-- Create the business email ID, for example `info@eliteharvestglobal.com`.
+- Create the business email ID, for example `eliteharvestglobal@gmail.com`.
 - Share cPanel or hosting login access with the client after launch.
 
 ## Google Setup
@@ -30,6 +30,6 @@
 
 - WhatsApp is connected to `8602722245`.
 - Call buttons are connected to `8602722245` and `9752823426`.
-- Email links are connected to `info@eliteharvestglobal.com`.
+- Email links are connected to `eliteharvestglobal@gmail.com`.
 - Office address and Google Maps link are placeholders until the final address is provided.
 - Logo currently uses a text placeholder and can be replaced after receiving the final logo.
