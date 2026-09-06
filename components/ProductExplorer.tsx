@@ -46,10 +46,10 @@ export function ProductExplorer() {
                 {product.specifications.qualityStandards && <div><dt>Quality</dt><dd>{product.specifications.qualityStandards}</dd></div>}
               </dl>
               {product.title === 'Dates / Fresh & Dry Dates' && <p className="product-note"><strong>Varieties:</strong> Medjool, Deglet Noor, Sukkari, and buyer-specified grades.</p>}
-              {product.title === 'Bitumen' && <p className="product-note"><strong>Grades:</strong> Penetration 60/70, 80/100, and Viscosity Grade VG-30.</p>}
+              {product.title === 'Industrial Commodities / Bitumen' && <p className="product-note"><strong>Grades:</strong> Penetration 60/70, 80/100, and Viscosity Grade VG-30.</p>}
               <div className="product-enquiry-actions">
                 <a className="enquiry-link" href={getWhatsAppInquiryHref(product.title)} target="_blank" rel="noreferrer">
-                  Request quote on WhatsApp <span aria-hidden="true">↗</span>
+                  {product.title === 'Industrial Commodities / Bitumen' ? 'Enquire Now' : 'Request quote on WhatsApp'} <span aria-hidden="true">↗</span>
                 </a>
                 <a className="email-enquiry-link" href={getEmailInquiryHref(product.title)}>
                   Email quote

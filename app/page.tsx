@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/seo';
-import { galleryItems, highlights, produceItems, serviceCoverage, site } from '@/data/site';
+import { galleryItems, getWhatsAppInquiryHref, highlights, produceItems, serviceCoverage, site } from '@/data/site';
 
 export const metadata: Metadata = {
   title: 'Agriculture & Global Trade',
@@ -101,7 +101,11 @@ export default function HomePage() {
                 <div>
                   <p>{product.category}</p>
                   <h3>{product.title}</h3>
-                  <Link href="/products" aria-label={`Explore ${product.title}`}>Explore</Link>
+                  {product.title === 'Industrial Commodities / Bitumen' ? (
+                    <a href={getWhatsAppInquiryHref(product.title)} target="_blank" rel="noreferrer">Enquire Now</a>
+                  ) : (
+                    <Link href="/products" aria-label={`Explore ${product.title}`}>Explore</Link>
+                  )}
                 </div>
               </article>
             ))}

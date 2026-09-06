@@ -233,6 +233,14 @@ export const produceItems: ProductCategory[] = [
     alt: 'Assortment of fresh produce',
     specifications: { origin: 'India, supplier confirmed per enquiry', packaging: 'Bulk, crates, cartons, or buyer specification', tradeTerms: 'FOB / CIF on request' },
   },
+  {
+    title: 'Industrial Commodities / Bitumen',
+    category: 'Industrial Commodities',
+    description: 'Supply of high-grade Bitumen (Penetration Grades / Industrial Bitumen) for infrastructure and industrial requirements.',
+    image: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=85',
+    alt: 'Industrial infrastructure materials for bulk trade supply',
+    specifications: { origin: 'Refinery origin confirmed per quotation', packaging: 'Steel drums / Flexitanks / Jumbo Bags', tradeTerms: 'FOB / CIF available', qualityStandards: 'Penetration 60/70, 80/100, VG-30; COA and inspection documents on request' },
+  },
 ];
 
 function getEnv(key: string, fallback: string): string {
@@ -320,14 +328,6 @@ export const productCategories: ProductCategory[] = [
     image: '/assets/images/quality-control.jpg',
     alt: 'Quality review and packaging inspection for a commercial shipment',
     specifications: { origin: 'Coordinated per destination', packaging: 'Agreed during quotation', tradeTerms: 'FOB / CIF coordination' },
-  },
-  {
-    title: 'Bitumen',
-    category: 'Industrial & Commodity',
-    description: 'Commercial bitumen supply for road, paving, waterproofing, and infrastructure projects.',
-    image: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=85',
-    alt: 'Industrial infrastructure materials for bulk trade supply',
-    specifications: { origin: 'Refinery origin confirmed per quotation', packaging: 'Steel drums / Flexitanks / Jumbo Bags', tradeTerms: 'FOB / CIF available', qualityStandards: 'Penetration 60/70, 80/100, VG-30; COA and inspection documents on request' },
   },
 ];
 
