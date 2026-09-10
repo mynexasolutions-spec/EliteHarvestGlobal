@@ -259,6 +259,7 @@ export const site = {
   name: getEnv('COMPANY_NAME', 'Elite Harvest Global'),
   tagline: getEnv('COMPANY_TAGLINE', 'Agriculture and Global Trade'),
   email: getEnv('COMPANY_DISPLAY_EMAIL', 'info@eliteharvestglobal.com'),
+  salesEmail: getEnv('COMPANY_SALES_EMAIL', 'sales@eliteharvestglobal.com'),
   targetEmail: getEnv('COMPANY_EMAIL', 'eliteharvestglobal@gmail.com'),
   emailHref: `mailto:${getEnv('COMPANY_EMAIL', 'eliteharvestglobal@gmail.com')}`,
   primaryPhone: getEnv('COMPANY_PHONE_PRIMARY', '+918602722245'),

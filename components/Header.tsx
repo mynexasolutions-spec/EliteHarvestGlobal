@@ -49,6 +49,8 @@ export function Header() {
         <div className="shell topbar-inner">
           <a href={site.emailHref}>{site.email}</a>
           <span className="topbar-divider" aria-hidden="true" />
+          <a href={site.emailHref}>{site.salesEmail}</a>
+          <span className="topbar-divider" aria-hidden="true" />
           <a href={site.primaryPhoneHref}>{site.primaryPhone}</a>
         </div>
       </div>

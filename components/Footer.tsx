@@ -44,6 +44,7 @@ export function Footer() {
         <div className="footer-column footer-contact">
           <h2>Get in touch</h2>
           <a href={site.emailHref}>{site.email}</a>
+          <a href={site.emailHref}>{site.salesEmail}</a>
           <a href={site.primaryPhoneHref}>{site.primaryPhone}</a>
           <a href={site.secondaryPhoneHref}>{site.secondaryPhone}</a>
           <a href={site.whatsappHref} target="_blank" rel="noreferrer">WhatsApp enquiry</a>

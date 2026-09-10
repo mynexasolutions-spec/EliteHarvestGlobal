@@ -27,7 +27,8 @@ export default function ContactPage() {
             <p className="eyebrow">Direct contact</p>
             <h2>Speak with the team.</h2>
             <div className="contact-methods">
-              <a href={site.emailHref}><span>Email</span>{site.email}</a>
+              <a href={site.emailHref}><span>Info email</span>{site.email}</a>
+              <a href={site.emailHref}><span>Sales email</span>{site.salesEmail}</a>
               <a href={site.primaryPhoneHref}><span>Phone</span>{site.primaryPhone}</a>
               <a href={site.secondaryPhoneHref}><span>Alternate phone</span>{site.secondaryPhone}</a>
               <a href={site.whatsappHref} target="_blank" rel="noreferrer"><span>WhatsApp</span>Start an enquiry</a>
