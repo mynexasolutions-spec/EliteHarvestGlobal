@@ -47,7 +47,7 @@ export function Header() {
     <header className={`site-header ${isScrolled ? 'is-scrolled' : ''}`}>
       <div className="topbar">
         <div className="shell topbar-inner">
-          <a href={`mailto:${site.email}`}>{site.email}</a>
+          <a href={site.emailHref}>{site.email}</a>
           <span className="topbar-divider" aria-hidden="true" />
           <a href={site.primaryPhoneHref}>{site.primaryPhone}</a>
         </div>

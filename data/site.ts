@@ -258,7 +258,9 @@ const whatsappNumber = getEnv('COMPANY_WHATSAPP', '918602722245').replace(/[^0-9
 export const site = {
   name: getEnv('COMPANY_NAME', 'Elite Harvest Global'),
   tagline: getEnv('COMPANY_TAGLINE', 'Agriculture and Global Trade'),
-  email: getEnv('COMPANY_EMAIL', 'eliteharvestglobal@gmail.com'),
+  email: getEnv('COMPANY_DISPLAY_EMAIL', 'info@eliteharvestglobal.com'),
+  targetEmail: getEnv('COMPANY_EMAIL', 'eliteharvestglobal@gmail.com'),
+  emailHref: `mailto:${getEnv('COMPANY_EMAIL', 'eliteharvestglobal@gmail.com')}`,
   primaryPhone: getEnv('COMPANY_PHONE_PRIMARY', '+918602722245'),
   secondaryPhone: getEnv('COMPANY_PHONE_SECONDARY', '+919752823426'),
   primaryPhoneHref: `tel:${getEnv('COMPANY_PHONE_PRIMARY', '+918602722245')}`,
@@ -277,7 +279,7 @@ export function getWhatsAppInquiryHref(productName: string): string {
 export function getEmailInquiryHref(productName: string): string {
   const subject = encodeURIComponent(`Quote request: ${productName}`);
   const body = encodeURIComponent(`Hello ${site.name},\n\nI am interested in ${productName}. Please share availability, specifications, pricing, and delivery terms.\n\nRegards,`);
-  return `mailto:${site.email}?subject=${subject}&body=${body}`;
+  return `mailto:${site.targetEmail}?subject=${subject}&body=${body}`;
 }
 
 export const navItems: NavItem[] = [
